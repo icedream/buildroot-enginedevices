@@ -1,0 +1,95 @@
+From 7a521fe4b37f8554ca53ef3236f0352e391aaa1d Mon Sep 17 00:00:00 2001
+From: "Arnold D. Robbins" <arnold@skeeve.com>
+Date: Mon, 12 Aug 2024 06:33:28 +0300
+Subject: [PATCH] Fix some C23 compilatio issues.
+
+---
+ ChangeLog | 17 +++++++++++++----
+ awkgram.c |  5 -----
+ awkgram.y |  5 -----
+ io.c      |  4 ++--
+ 4 files changed, 15 insertions(+), 16 deletions(-)
+
+diff --git a/ChangeLog b/ChangeLog
+index f7d55a13c..0d084f353 100644
+--- a/ChangeLog
++++ b/ChangeLog
+@@ -1,11 +1,20 @@
++2024-08-12         Arnold D. Robbins     <arnold@skeeve.com>
++
++	Fix some C23 compilation issues. THanks to
++	Jeffrey Cliff <jeffrey.cliff@gmail.com> for the report.
++
++	* awkgram.y (get_src_buf): Remove obsolete comment.
++	* io.c (iop_alloc, get_read_timeout): Fix casts for read.
++
+ 2024-08-11         John E. Malmberg      <wb8tyw@qsl.net>
+-	* printf.c (format_mpg_integer_digits) improved fix
+-	from Arnold for if !HAVE_MPFR
++
++	* printf.c (format_mpg_integer_digits): Improved fix
++	from Arnold for if !HAVE_MPFR.
+ 
+ 2024-08-11         John E. Malmberg      <wb8tyw@qsl.net>
+ 
+-	* printf.c (format_float) fix cant_format macro call
+-	  (format_mpg_integer_digits) to return NULL if !HAVE_MPFR
++	* printf.c (format_float): Fix cant_happen macro call.
++	(format_mpg_integer_digits): Return NULL if !HAVE_MPFR.
+ 
+ 2024-08-10         Arnold D. Robbins     <arnold@skeeve.com>
+ 
+diff --git a/awkgram.c b/awkgram.c
+index 80eae86c5..d340dcaf9 100644
+--- a/awkgram.c
++++ b/awkgram.c
+@@ -5607,11 +5607,6 @@ get_src_buf()
+ 	int savelen;
+ 	struct stat sbuf;
+ 
+-	/*
+-	 * No argument prototype on readfunc on purpose,
+-	 * avoids problems with some ancient systems where
+-	 * the types of arguments to read() aren't up to date.
+-	 */
+ 	static ssize_t (*readfunc)(int, void *, size_t) = NULL;
+ 
+ 	if (readfunc == NULL) {
+diff --git a/awkgram.y b/awkgram.y
+index 24acc460f..fc7a9ba3c 100644
+--- a/awkgram.y
++++ b/awkgram.y
+@@ -3105,11 +3105,6 @@ get_src_buf()
+ 	int savelen;
+ 	struct stat sbuf;
+ 
+-	/*
+-	 * No argument prototype on readfunc on purpose,
+-	 * avoids problems with some ancient systems where
+-	 * the types of arguments to read() aren't up to date.
+-	 */
+ 	static ssize_t (*readfunc)(int, void *, size_t) = NULL;
+ 
+ 	if (readfunc == NULL) {
+diff --git a/io.c b/io.c
+index acb707b0d..f0c7901cd 100644
+--- a/io.c
++++ b/io.c
+@@ -3388,7 +3388,7 @@ iop_alloc(int fd, const char *name, int errno_val)
+ 
+ 	iop->public.fd = fd;
+ 	iop->public.name = name;
+-	iop->public.read_func = ( ssize_t(*)() ) read;
++	iop->public.read_func = ( ssize_t(*)(int, void *, size_t) ) read;
+ 	iop->valid = false;
+ 	iop->errcode = errno_val;
+ 
+@@ -4448,7 +4448,7 @@ get_read_timeout(IOBUF *iop)
+ 	}
+ 
+ 	/* overwrite read routine only if an extension has not done so */
+-	if ((iop->public.read_func == ( ssize_t(*)() ) read) && tmout > 0)
++	if ((iop->public.read_func == ( ssize_t(*)(int, void *, size_t) ) read) && tmout > 0)
+ 		iop->public.read_func = read_with_timeout;
+ 
+ 	return tmout;
