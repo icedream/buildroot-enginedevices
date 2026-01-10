@@ -34,16 +34,14 @@ diff --git a/src/basic/missing_magic.h b/src/basic/missing_magic.h
 index 82ede1873e..197148862c 100644
 --- a/src/basic/missing_magic.h
 +++ b/src/basic/missing_magic.h
-@@ -197,3 +197,10 @@
+@@ -197,3 +197,8 @@
  #ifndef NTFS3_SUPER_MAGIC
  #define NTFS3_SUPER_MAGIC 0x7366746e
  #endif
 +
 +/* Added in Linux commit e2f48c48090dea172c0c571101041de64634dae5. Remove when next sync'd */
 +#ifndef BCACHEFS_SUPER_MAGIC
-+#  define BCACHEFS_SUPER_MAGIC 0xca451a4e
-+#else
-+assert_cc(BCACHEFS_SUPER_MAGIC == 0xca451a4e)
++#define BCACHEFS_SUPER_MAGIC 0xca451a4e
 +#endif
 -- 
 2.52.0
