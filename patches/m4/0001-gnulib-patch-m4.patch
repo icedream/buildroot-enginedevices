@@ -1,0 +1,72 @@
+diff -urap1 a/m4/gnulib-common.m4 b/m4/gnulib-common.m4
+--- a/m4/gnulib-common.m4	2021-04-22 22:28:47.000000000 +0200
++++ b/m4/gnulib-common.m4	2026-01-09 17:48:16.000000000 +0100
+@@ -105,2 +105,8 @@ AC_DEFUN([gl_COMMON_BODY], [
+ 
++#ifdef __has_c_attribute
++# define _GL_HAS_C_ATTRIBUTE(attr) __has_c_attribute (__##attr##__)
++#else
++# define _GL_HAS_C_ATTRIBUTE(attr) 0
++#endif
++
+ ]dnl There is no _GL_ATTRIBUTE_ALIGNED; use stdalign's _Alignas instead.
+@@ -144,3 +150,3 @@ AC_DEFUN([gl_COMMON_BODY], [
+ 
+-#if 201710L < __STDC_VERSION__
++#if _GL_HAS_C_ATTRIBUTE (deprecated)
+ # define _GL_ATTRIBUTE_DEPRECATED [[__deprecated__]]
+@@ -170,3 +176,3 @@ AC_DEFUN([gl_COMMON_BODY], [
+ /* FALLTHROUGH is special, because it always expands to something.  */
+-#if 201710L < __STDC_VERSION__
++#if _GL_HAS_C_ATTRIBUTE (fallthrough)
+ # define _GL_ATTRIBUTE_FALLTHROUGH [[__fallthrough__]]
+@@ -197,11 +203,8 @@ AC_DEFUN([gl_COMMON_BODY], [
+ 
+-#if 201710L < __STDC_VERSION__
++#if _GL_HAS_C_ATTRIBUTE (maybe_unused)
+ # define _GL_ATTRIBUTE_MAYBE_UNUSED [[__maybe_unused__]]
+-#elif _GL_HAS_ATTRIBUTE (unused)
+-# define _GL_ATTRIBUTE_MAYBE_UNUSED __attribute__ ((__unused__))
+ #else
+-# define _GL_ATTRIBUTE_MAYBE_UNUSED
++# define _GL_ATTRIBUTE_MAYBE_UNUSED _GL_ATTRIBUTE_UNUSED
+ #endif
+ /* Earlier spellings of this macro.  */
+-#define _GL_UNUSED _GL_ATTRIBUTE_MAYBE_UNUSED
+ #define _UNUSED_PARAMETER_ _GL_ATTRIBUTE_MAYBE_UNUSED
+@@ -214,3 +217,3 @@ AC_DEFUN([gl_COMMON_BODY], [
+ 
+-#if 201710L < __STDC_VERSION__
++#if _GL_HAS_C_ATTRIBUTE (nodiscard)
+ # define _GL_ATTRIBUTE_NODISCARD [[__nodiscard__]]
+@@ -272,2 +275,10 @@ AC_DEFUN([gl_COMMON_BODY], [
+ 
++#if _GL_HAS_ATTRIBUTE (unused)
++# define _GL_ATTRIBUTE_UNUSED __attribute__ ((__unused__))
++#else
++# define _GL_ATTRIBUTE_UNUSED
++#endif
++/* Earlier spellings of this macro.  */
++#define _GL_UNUSED _GL_ATTRIBUTE_UNUSED
++
+ ]dnl There is no _GL_ATTRIBUTE_VISIBILITY; see m4/visibility.m4 instead.
+@@ -276,3 +287,3 @@ AC_DEFUN([gl_COMMON_BODY], [
+ #if !defined __cplusplus || _GL_GNUC_PREREQ (4, 5)
+-# define _GL_UNUSED_LABEL _GL_ATTRIBUTE_MAYBE_UNUSED
++# define _GL_UNUSED_LABEL _GL_ATTRIBUTE_UNUSED
+ #else
+diff -urap1 a/m4/gnulib-comp.m4 b/m4/gnulib-comp.m4
+--- a/m4/gnulib-comp.m4	2021-05-19 16:37:18.000000000 +0200
++++ b/m4/gnulib-comp.m4	2026-01-09 17:55:27.000000000 +0100
+@@ -493,3 +493,2 @@ AC_DEFUN([M4_EARLY],
+   # Code from module snippet/c++defs:
+-  # Code from module snippet/unused-parameter:
+   # Code from module snippet/warn-on-use:
+@@ -2580,3 +2579,2 @@ AC_DEFUN([M4_FILE_LIST], [
+   lib/unlocked-io.h
+-  lib/unused-parameter.h
+   lib/vasnprintf.c
+@@ -3384,3 +3382,2 @@ AC_DEFUN([M4_FILE_LIST], [
+   tests=lib/unsetenv.c
+-  tests=lib/unused-parameter.h
+   tests=lib/vma-iter.c

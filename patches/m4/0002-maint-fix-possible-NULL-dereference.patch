@@ -1,0 +1,52 @@
+From 877c1446efda7bc39670d9cb684a7d6ec9f8308e Mon Sep 17 00:00:00 2001
+From: Paul Eggert <eggert@cs.ucla.edu>
+Date: Wed, 26 Jan 2022 10:27:30 -0800
+Subject: [PATCH 2/3] maint: fix possible NULL dereference
+
+Problem found by --enable-gcc-warnings.
+* src/m4.h: Include intprops.h.
+* src/output.c (m4_tmpname): Do not assume that xasprintf
+returns non-null pointer.
+---
+ src/m4.h     |  1 +
+ src/output.c | 12 +++++++-----
+ 2 files changed, 8 insertions(+), 5 deletions(-)
+
+diff --git a/src/m4.h b/src/m4.h
+index b9ee884e..44533997 100644
+--- a/src/m4.h
++++ b/src/m4.h
+@@ -46,6 +46,7 @@
+ #include "error.h"
+ #include "exitfail.h"
+ #include "filenamecat.h"
++#include "intprops.h"
+ #include "obstack.h"
+ #include "stdio--.h"
+ #include "stdlib--.h"
+diff --git a/src/output.c b/src/output.c
+index 6f148ceb..d962bf36 100644
+--- a/src/output.c
++++ b/src/output.c
+@@ -191,11 +191,13 @@ m4_tmpname (int divnum)
+   static char *tail;
+   if (buffer == NULL)
+     {
+-      tail = xasprintf ("%s/m4-%d", output_temp_dir->dir_name, INT_MAX);
+-      buffer = (char *) obstack_copy0 (&diversion_storage, tail,
+-                                       strlen (tail));
+-      free (tail);
+-      tail = strrchr (buffer, '-') + 1;
++      size_t dirlen = strlen (output_temp_dir->dir_name);
++      static char const subprefix[] = "/m4-";
++      size_t size = dirlen + sizeof subprefix + INT_STRLEN_BOUND (int);
++      buffer = obstack_alloc (&diversion_storage, size);
++      memcpy (buffer, output_temp_dir->dir_name, dirlen);
++      memcpy (buffer + dirlen, subprefix, sizeof subprefix - 1);
++      tail = buffer + dirlen + sizeof subprefix - 1;
+     }
+   assert (0 < divnum);
+   sprintf (tail, "%d", divnum);
+-- 
+2.52.0
+

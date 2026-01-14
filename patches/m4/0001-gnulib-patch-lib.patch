@@ -1,0 +1,1657 @@
+diff -urap1 a/lib/config.hin b/lib/config.hin
+--- a/lib/config.hin	2021-05-28 20:47:27.000000000 +0200
++++ b/lib/config.hin	2026-01-09 17:55:47.000000000 +0100
+@@ -844,3 +844,3 @@
+ 
+-/* Define to 1 if you have the `btowc' function. */
++/* Define to 1 if you have the 'btowc' function. */
+ #undef HAVE_BTOWC
+@@ -850,6 +850,6 @@
+ 
+-/* Define to 1 if you have the `canonicalize_file_name' function. */
++/* Define to 1 if you have the 'canonicalize_file_name' function. */
+ #undef HAVE_CANONICALIZE_FILE_NAME
+ 
+-/* Define to 1 if you have the `catgets' function. */
++/* Define to 1 if you have the 'catgets' function. */
+ #undef HAVE_CATGETS
+@@ -864,15 +864,15 @@
+ 
+-/* Define to 1 if you have the `clock_gettime' function. */
++/* Define to 1 if you have the 'clock_gettime' function. */
+ #undef HAVE_CLOCK_GETTIME
+ 
+-/* Define to 1 if you have the `clock_settime' function. */
++/* Define to 1 if you have the 'clock_settime' function. */
+ #undef HAVE_CLOCK_SETTIME
+ 
+-/* Define to 1 if you have the `closedir' function. */
++/* Define to 1 if you have the 'closedir' function. */
+ #undef HAVE_CLOSEDIR
+ 
+-/* Define to 1 if you have the `close_range' function. */
++/* Define to 1 if you have the 'close_range' function. */
+ #undef HAVE_CLOSE_RANGE
+ 
+-/* Define to 1 if you have the `confstr' function. */
++/* Define to 1 if you have the 'confstr' function. */
+ #undef HAVE_CONFSTR
+@@ -898,3 +898,3 @@
+ 
+-/* Define to 1 if you have the declaration of `alarm', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'alarm', and to 0 if you don't.
+    */
+@@ -902,3 +902,3 @@
+ 
+-/* Define to 1 if you have the declaration of `clearerr_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'clearerr_unlocked', and to 0 if
+    you don't. */
+@@ -906,3 +906,3 @@
+ 
+-/* Define to 1 if you have the declaration of `copysign', and to 0 if you
++/* Define to 1 if you have the declaration of 'copysign', and to 0 if you
+    don't. */
+@@ -910,3 +910,3 @@
+ 
+-/* Define to 1 if you have the declaration of `copysignf', and to 0 if you
++/* Define to 1 if you have the declaration of 'copysignf', and to 0 if you
+    don't. */
+@@ -914,3 +914,3 @@
+ 
+-/* Define to 1 if you have the declaration of `copysignl', and to 0 if you
++/* Define to 1 if you have the declaration of 'copysignl', and to 0 if you
+    don't. */
+@@ -918,3 +918,3 @@
+ 
+-/* Define to 1 if you have the declaration of `dirfd', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'dirfd', and to 0 if you don't.
+    */
+@@ -922,3 +922,3 @@
+ 
+-/* Define to 1 if you have the declaration of `ecvt', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'ecvt', and to 0 if you don't.
+    */
+@@ -926,3 +926,3 @@
+ 
+-/* Define to 1 if you have the declaration of `execvpe', and to 0 if you
++/* Define to 1 if you have the declaration of 'execvpe', and to 0 if you
+    don't. */
+@@ -930,3 +930,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fchdir', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'fchdir', and to 0 if you don't.
+    */
+@@ -934,3 +934,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fcloseall', and to 0 if you
++/* Define to 1 if you have the declaration of 'fcloseall', and to 0 if you
+    don't. */
+@@ -938,3 +938,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fcvt', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'fcvt', and to 0 if you don't.
+    */
+@@ -942,3 +942,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fdopendir', and to 0 if you
++/* Define to 1 if you have the declaration of 'fdopendir', and to 0 if you
+    don't. */
+@@ -946,3 +946,3 @@
+ 
+-/* Define to 1 if you have the declaration of `feof_unlocked', and to 0 if you
++/* Define to 1 if you have the declaration of 'feof_unlocked', and to 0 if you
+    don't. */
+@@ -950,3 +950,3 @@
+ 
+-/* Define to 1 if you have the declaration of `ferror_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'ferror_unlocked', and to 0 if
+    you don't. */
+@@ -954,3 +954,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fflush_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'fflush_unlocked', and to 0 if
+    you don't. */
+@@ -958,3 +958,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fgets_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'fgets_unlocked', and to 0 if
+    you don't. */
+@@ -962,3 +962,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fpurge', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'fpurge', and to 0 if you don't.
+    */
+@@ -966,3 +966,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fputc_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'fputc_unlocked', and to 0 if
+    you don't. */
+@@ -970,3 +970,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fputs_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'fputs_unlocked', and to 0 if
+    you don't. */
+@@ -974,3 +974,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fread_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'fread_unlocked', and to 0 if
+    you don't. */
+@@ -978,3 +978,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fseeko', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'fseeko', and to 0 if you don't.
+    */
+@@ -982,3 +982,3 @@
+ 
+-/* Define to 1 if you have the declaration of `ftello', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'ftello', and to 0 if you don't.
+    */
+@@ -986,3 +986,3 @@
+ 
+-/* Define to 1 if you have the declaration of `fwrite_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'fwrite_unlocked', and to 0 if
+    you don't. */
+@@ -990,3 +990,3 @@
+ 
+-/* Define to 1 if you have the declaration of `gcvt', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'gcvt', and to 0 if you don't.
+    */
+@@ -994,3 +994,3 @@
+ 
+-/* Define to 1 if you have the declaration of `getchar_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'getchar_unlocked', and to 0 if
+    you don't. */
+@@ -998,3 +998,3 @@
+ 
+-/* Define to 1 if you have the declaration of `getcwd', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'getcwd', and to 0 if you don't.
+    */
+@@ -1002,3 +1002,3 @@
+ 
+-/* Define to 1 if you have the declaration of `getc_unlocked', and to 0 if you
++/* Define to 1 if you have the declaration of 'getc_unlocked', and to 0 if you
+    don't. */
+@@ -1006,3 +1006,3 @@
+ 
+-/* Define to 1 if you have the declaration of `getdtablesize', and to 0 if you
++/* Define to 1 if you have the declaration of 'getdtablesize', and to 0 if you
+    don't. */
+@@ -1010,3 +1010,3 @@
+ 
+-/* Define to 1 if you have the declaration of `inet_pton', and to 0 if you
++/* Define to 1 if you have the declaration of 'inet_pton', and to 0 if you
+    don't. */
+@@ -1014,3 +1014,3 @@
+ 
+-/* Define to 1 if you have the declaration of `isblank', and to 0 if you
++/* Define to 1 if you have the declaration of 'isblank', and to 0 if you
+    don't. */
+@@ -1018,3 +1018,3 @@
+ 
+-/* Define to 1 if you have the declaration of `iswblank', and to 0 if you
++/* Define to 1 if you have the declaration of 'iswblank', and to 0 if you
+    don't. */
+@@ -1022,3 +1022,3 @@
+ 
+-/* Define to 1 if you have the declaration of `mbrtowc', and to 0 if you
++/* Define to 1 if you have the declaration of 'mbrtowc', and to 0 if you
+    don't. */
+@@ -1026,3 +1026,3 @@
+ 
+-/* Define to 1 if you have the declaration of `mbsinit', and to 0 if you
++/* Define to 1 if you have the declaration of 'mbsinit', and to 0 if you
+    don't. */
+@@ -1030,3 +1030,3 @@
+ 
+-/* Define to 1 if you have the declaration of `memrchr', and to 0 if you
++/* Define to 1 if you have the declaration of 'memrchr', and to 0 if you
+    don't. */
+@@ -1034,3 +1034,3 @@
+ 
+-/* Define to 1 if you have the declaration of `posix_spawn', and to 0 if you
++/* Define to 1 if you have the declaration of 'posix_spawn', and to 0 if you
+    don't. */
+@@ -1038,3 +1038,3 @@
+ 
+-/* Define to 1 if you have the declaration of `program_invocation_name', and
++/* Define to 1 if you have the declaration of 'program_invocation_name', and
+    to 0 if you don't. */
+@@ -1042,3 +1042,3 @@
+ 
+-/* Define to 1 if you have the declaration of `program_invocation_short_name',
++/* Define to 1 if you have the declaration of 'program_invocation_short_name',
+    and to 0 if you don't. */
+@@ -1046,3 +1046,3 @@
+ 
+-/* Define to 1 if you have the declaration of `putchar_unlocked', and to 0 if
++/* Define to 1 if you have the declaration of 'putchar_unlocked', and to 0 if
+    you don't. */
+@@ -1050,3 +1050,3 @@
+ 
+-/* Define to 1 if you have the declaration of `putc_unlocked', and to 0 if you
++/* Define to 1 if you have the declaration of 'putc_unlocked', and to 0 if you
+    don't. */
+@@ -1054,3 +1054,3 @@
+ 
+-/* Define to 1 if you have the declaration of `setenv', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'setenv', and to 0 if you don't.
+    */
+@@ -1058,3 +1058,3 @@
+ 
+-/* Define to 1 if you have the declaration of `sleep', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'sleep', and to 0 if you don't.
+    */
+@@ -1062,3 +1062,3 @@
+ 
+-/* Define to 1 if you have the declaration of `snprintf', and to 0 if you
++/* Define to 1 if you have the declaration of 'snprintf', and to 0 if you
+    don't. */
+@@ -1066,3 +1066,3 @@
+ 
+-/* Define to 1 if you have the declaration of `strdup', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'strdup', and to 0 if you don't.
+    */
+@@ -1070,3 +1070,3 @@
+ 
+-/* Define to 1 if you have the declaration of `strerror_r', and to 0 if you
++/* Define to 1 if you have the declaration of 'strerror_r', and to 0 if you
+    don't. */
+@@ -1074,3 +1074,3 @@
+ 
+-/* Define to 1 if you have the declaration of `strndup', and to 0 if you
++/* Define to 1 if you have the declaration of 'strndup', and to 0 if you
+    don't. */
+@@ -1078,3 +1078,3 @@
+ 
+-/* Define to 1 if you have the declaration of `strnlen', and to 0 if you
++/* Define to 1 if you have the declaration of 'strnlen', and to 0 if you
+    don't. */
+@@ -1082,3 +1082,3 @@
+ 
+-/* Define to 1 if you have the declaration of `strsignal', and to 0 if you
++/* Define to 1 if you have the declaration of 'strsignal', and to 0 if you
+    don't. */
+@@ -1086,3 +1086,3 @@
+ 
+-/* Define to 1 if you have the declaration of `sys_siglist', and to 0 if you
++/* Define to 1 if you have the declaration of 'sys_siglist', and to 0 if you
+    don't. */
+@@ -1090,3 +1090,3 @@
+ 
+-/* Define to 1 if you have the declaration of `towlower', and to 0 if you
++/* Define to 1 if you have the declaration of 'towlower', and to 0 if you
+    don't. */
+@@ -1094,3 +1094,3 @@
+ 
+-/* Define to 1 if you have the declaration of `unsetenv', and to 0 if you
++/* Define to 1 if you have the declaration of 'unsetenv', and to 0 if you
+    don't. */
+@@ -1098,3 +1098,3 @@
+ 
+-/* Define to 1 if you have the declaration of `wcrtomb', and to 0 if you
++/* Define to 1 if you have the declaration of 'wcrtomb', and to 0 if you
+    don't. */
+@@ -1102,3 +1102,3 @@
+ 
+-/* Define to 1 if you have the declaration of `wcsdup', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'wcsdup', and to 0 if you don't.
+    */
+@@ -1106,3 +1106,3 @@
+ 
+-/* Define to 1 if you have the declaration of `wctob', and to 0 if you don't.
++/* Define to 1 if you have the declaration of 'wctob', and to 0 if you don't.
+    */
+@@ -1110,3 +1110,3 @@
+ 
+-/* Define to 1 if you have the declaration of `wcwidth', and to 0 if you
++/* Define to 1 if you have the declaration of 'wcwidth', and to 0 if you
+    don't. */
+@@ -1114,3 +1114,3 @@
+ 
+-/* Define to 1 if you have the declaration of `_fseeki64', and to 0 if you
++/* Define to 1 if you have the declaration of '_fseeki64', and to 0 if you
+    don't. */
+@@ -1118,3 +1118,3 @@
+ 
+-/* Define to 1 if you have the declaration of `_putenv', and to 0 if you
++/* Define to 1 if you have the declaration of '_putenv', and to 0 if you
+    don't. */
+@@ -1122,3 +1122,3 @@
+ 
+-/* Define to 1 if you have the declaration of `_snprintf', and to 0 if you
++/* Define to 1 if you have the declaration of '_snprintf', and to 0 if you
+    don't. */
+@@ -1126,3 +1126,3 @@
+ 
+-/* Define to 1 if you have the declaration of `_sys_siglist', and to 0 if you
++/* Define to 1 if you have the declaration of '_sys_siglist', and to 0 if you
+    don't. */
+@@ -1130,3 +1130,3 @@
+ 
+-/* Define to 1 if you have the declaration of `__argv', and to 0 if you don't.
++/* Define to 1 if you have the declaration of '__argv', and to 0 if you don't.
+    */
+@@ -1134,3 +1134,3 @@
+ 
+-/* Define to 1 if you have the declaration of `__fpending', and to 0 if you
++/* Define to 1 if you have the declaration of '__fpending', and to 0 if you
+    don't. */
+@@ -1141,6 +1141,6 @@
+ 
+-/* Define to 1 if you have the `dirfd' function. */
++/* Define to 1 if you have the 'dirfd' function. */
+ #undef HAVE_DIRFD
+ 
+-/* Define to 1 if you have the `duplocale' function. */
++/* Define to 1 if you have the 'duplocale' function. */
+ #undef HAVE_DUPLOCALE
+@@ -1150,9 +1150,9 @@
+ 
+-/* Define to 1 if you have the `explicit_bzero' function. */
++/* Define to 1 if you have the 'explicit_bzero' function. */
+ #undef HAVE_EXPLICIT_BZERO
+ 
+-/* Define to 1 if you have the `explicit_memset' function. */
++/* Define to 1 if you have the 'explicit_memset' function. */
+ #undef HAVE_EXPLICIT_MEMSET
+ 
+-/* Define to 1 if you have the `faccessat' function. */
++/* Define to 1 if you have the 'faccessat' function. */
+ #undef HAVE_FACCESSAT
+@@ -1163,9 +1163,9 @@
+ 
+-/* Define to 1 if you have the `fchdir' function. */
++/* Define to 1 if you have the 'fchdir' function. */
+ #undef HAVE_FCHDIR
+ 
+-/* Define to 1 if you have the `fcntl' function. */
++/* Define to 1 if you have the 'fcntl' function. */
+ #undef HAVE_FCNTL
+ 
+-/* Define to 1 if you have the `fdopendir' function. */
++/* Define to 1 if you have the 'fdopendir' function. */
+ #undef HAVE_FDOPENDIR
+@@ -1175,6 +1175,6 @@
+ 
+-/* Define to 1 if you have the `fpurge' function. */
++/* Define to 1 if you have the 'fpurge' function. */
+ #undef HAVE_FPURGE
+ 
+-/* Define to 1 if you have the `freelocale' function. */
++/* Define to 1 if you have the 'freelocale' function. */
+ #undef HAVE_FREELOCALE
+@@ -1190,12 +1190,12 @@
+ 
+-/* Define to 1 if fseeko (and presumably ftello) exists and is declared. */
++/* Define to 1 if fseeko (and ftello) are declared in stdio.h. */
+ #undef HAVE_FSEEKO
+ 
+-/* Define to 1 if you have the `fstatat' function. */
++/* Define to 1 if you have the 'fstatat' function. */
+ #undef HAVE_FSTATAT
+ 
+-/* Define to 1 if you have the `ftruncate' function. */
++/* Define to 1 if you have the 'ftruncate' function. */
+ #undef HAVE_FTRUNCATE
+ 
+-/* Define to 1 if you have the `getcwd' function. */
++/* Define to 1 if you have the 'getcwd' function. */
+ #undef HAVE_GETCWD
+@@ -1206,18 +1206,18 @@
+ 
+-/* Define to 1 if you have the `getdtablesize' function. */
++/* Define to 1 if you have the 'getdtablesize' function. */
+ #undef HAVE_GETDTABLESIZE
+ 
+-/* Define to 1 if you have the `getegid' function. */
++/* Define to 1 if you have the 'getegid' function. */
+ #undef HAVE_GETEGID
+ 
+-/* Define to 1 if you have the `geteuid' function. */
++/* Define to 1 if you have the 'geteuid' function. */
+ #undef HAVE_GETEUID
+ 
+-/* Define to 1 if you have the `getexecname' function. */
++/* Define to 1 if you have the 'getexecname' function. */
+ #undef HAVE_GETEXECNAME
+ 
+-/* Define to 1 if you have the `getgid' function. */
++/* Define to 1 if you have the 'getgid' function. */
+ #undef HAVE_GETGID
+ 
+-/* Define to 1 if you have the `getlocalename_l' function. */
++/* Define to 1 if you have the 'getlocalename_l' function. */
+ #undef HAVE_GETLOCALENAME_L
+@@ -1227,3 +1227,3 @@
+ 
+-/* Define to 1 if you have the `getopt_long_only' function. */
++/* Define to 1 if you have the 'getopt_long_only' function. */
+ #undef HAVE_GETOPT_LONG_ONLY
+@@ -1233,9 +1233,9 @@
+ 
+-/* Define to 1 if you have the `getprogname' function. */
++/* Define to 1 if you have the 'getprogname' function. */
+ #undef HAVE_GETPROGNAME
+ 
+-/* Define to 1 if you have the `getrandom' function. */
++/* Define to 1 if you have the 'getrandom' function. */
+ #undef HAVE_GETRANDOM
+ 
+-/* Define to 1 if you have the `getrlimit' function. */
++/* Define to 1 if you have the 'getrlimit' function. */
+ #undef HAVE_GETRLIMIT
+@@ -1245,6 +1245,6 @@
+ 
+-/* Define to 1 if you have the `gettimeofday' function. */
++/* Define to 1 if you have the 'gettimeofday' function. */
+ #undef HAVE_GETTIMEOFDAY
+ 
+-/* Define to 1 if you have the `getuid' function. */
++/* Define to 1 if you have the 'getuid' function. */
+ #undef HAVE_GETUID
+@@ -1261,3 +1261,3 @@
+ 
+-/* Define to 1 if you have the `inet_pton' function. */
++/* Define to 1 if you have the 'inet_pton' function. */
+ #undef HAVE_INET_PTON
+@@ -1279,3 +1279,3 @@
+ 
+-/* Define to 1 if you have the `ioctl' function. */
++/* Define to 1 if you have the 'ioctl' function. */
+ #undef HAVE_IOCTL
+@@ -1288,3 +1288,3 @@
+ 
+-/* Define to 1 if you have the `isblank' function. */
++/* Define to 1 if you have the 'isblank' function. */
+ #undef HAVE_ISBLANK
+@@ -1300,12 +1300,12 @@
+ 
+-/* Define to 1 if you have the `issetugid' function. */
++/* Define to 1 if you have the 'issetugid' function. */
+ #undef HAVE_ISSETUGID
+ 
+-/* Define to 1 if you have the `iswblank' function. */
++/* Define to 1 if you have the 'iswblank' function. */
+ #undef HAVE_ISWBLANK
+ 
+-/* Define to 1 if you have the `iswcntrl' function. */
++/* Define to 1 if you have the 'iswcntrl' function. */
+ #undef HAVE_ISWCNTRL
+ 
+-/* Define to 1 if you have the `iswctype' function. */
++/* Define to 1 if you have the 'iswctype' function. */
+ #undef HAVE_ISWCTYPE
+@@ -1339,3 +1339,3 @@
+ 
+-/* Define to 1 if you have the `link' function. */
++/* Define to 1 if you have the 'link' function. */
+ #undef HAVE_LINK
+@@ -1345,3 +1345,3 @@
+ 
+-/* Define to 1 if you have the `lstat' function. */
++/* Define to 1 if you have the 'lstat' function. */
+ #undef HAVE_LSTAT
+@@ -1361,9 +1361,9 @@
+ 
+-/* Define to 1 if you have the `mbrtowc' function. */
++/* Define to 1 if you have the 'mbrtowc' function. */
+ #undef HAVE_MBRTOWC
+ 
+-/* Define to 1 if you have the `mbsinit' function. */
++/* Define to 1 if you have the 'mbsinit' function. */
+ #undef HAVE_MBSINIT
+ 
+-/* Define to 1 if you have the `mbslen' function. */
++/* Define to 1 if you have the 'mbslen' function. */
+ #undef HAVE_MBSLEN
+@@ -1373,12 +1373,12 @@
+ 
+-/* Define to 1 if you have the `mbtowc' function. */
++/* Define to 1 if you have the 'mbtowc' function. */
+ #undef HAVE_MBTOWC
+ 
+-/* Define to 1 if you have the `mempcpy' function. */
++/* Define to 1 if you have the 'mempcpy' function. */
+ #undef HAVE_MEMPCPY
+ 
+-/* Define to 1 if you have the `memrchr' function. */
++/* Define to 1 if you have the 'memrchr' function. */
+ #undef HAVE_MEMRCHR
+ 
+-/* Define to 1 if you have the `memset_s' function. */
++/* Define to 1 if you have the 'memset_s' function. */
+ #undef HAVE_MEMSET_S
+@@ -1398,12 +1398,12 @@
+ 
+-/* Define to 1 if you have the `mkdtemp' function. */
++/* Define to 1 if you have the 'mkdtemp' function. */
+ #undef HAVE_MKDTEMP
+ 
+-/* Define to 1 if you have the `mkstemp' function. */
++/* Define to 1 if you have the 'mkstemp' function. */
+ #undef HAVE_MKSTEMP
+ 
+-/* Define to 1 if you have the `mprotect' function. */
++/* Define to 1 if you have the 'mprotect' function. */
+ #undef HAVE_MPROTECT
+ 
+-/* Define to 1 if you have the `mquery' function. */
++/* Define to 1 if you have the 'mquery' function. */
+ #undef HAVE_MQUERY
+@@ -1424,6 +1424,6 @@
+ 
+-/* Define to 1 if you have the `newlocale' function. */
++/* Define to 1 if you have the 'newlocale' function. */
+ #undef HAVE_NEWLOCALE
+ 
+-/* Define to 1 if you have the `nl_langinfo' function. */
++/* Define to 1 if you have the 'nl_langinfo' function. */
+ #undef HAVE_NL_LANGINFO
+@@ -1433,6 +1433,6 @@
+ 
+-/* Define to 1 if you have the `openat' function. */
++/* Define to 1 if you have the 'openat' function. */
+ #undef HAVE_OPENAT
+ 
+-/* Define to 1 if you have the `opendir' function. */
++/* Define to 1 if you have the 'opendir' function. */
+ #undef HAVE_OPENDIR
+@@ -1449,15 +1449,15 @@
+ 
+-/* Define to 1 if you have the `pipe' function. */
++/* Define to 1 if you have the 'pipe' function. */
+ #undef HAVE_PIPE
+ 
+-/* Define to 1 if you have the `pipe2' function. */
++/* Define to 1 if you have the 'pipe2' function. */
+ #undef HAVE_PIPE2
+ 
+-/* Define to 1 if you have the `posix_spawn' function. */
++/* Define to 1 if you have the 'posix_spawn' function. */
+ #undef HAVE_POSIX_SPAWN
+ 
+-/* Define to 1 if the system has the type `posix_spawnattr_t'. */
++/* Define to 1 if the system has the type 'posix_spawnattr_t'. */
+ #undef HAVE_POSIX_SPAWNATTR_T
+ 
+-/* Define to 1 if you have the `posix_spawn_file_actions_addchdir' function.
++/* Define to 1 if you have the 'posix_spawn_file_actions_addchdir' function.
+    */
+@@ -1465,3 +1465,3 @@
+ 
+-/* Define to 1 if you have the `posix_spawn_file_actions_addchdir_np'
++/* Define to 1 if you have the 'posix_spawn_file_actions_addchdir_np'
+    function. */
+@@ -1469,6 +1469,6 @@
+ 
+-/* Define to 1 if the system has the type `posix_spawn_file_actions_t'. */
++/* Define to 1 if the system has the type 'posix_spawn_file_actions_t'. */
+ #undef HAVE_POSIX_SPAWN_FILE_ACTIONS_T
+ 
+-/* Define to 1 if you have the `pstat_getprocvm' function. */
++/* Define to 1 if you have the 'pstat_getprocvm' function. */
+ #undef HAVE_PSTAT_GETPROCVM
+@@ -1478,3 +1478,3 @@
+ 
+-/* Define to 1 if you have the `pthread_atfork' function. */
++/* Define to 1 if you have the 'pthread_atfork' function. */
+ #undef HAVE_PTHREAD_ATFORK
+@@ -1497,27 +1497,27 @@
+ 
+-/* Define to 1 if the system has the type `pthread_spinlock_t'. */
++/* Define to 1 if the system has the type 'pthread_spinlock_t'. */
+ #undef HAVE_PTHREAD_SPINLOCK_T
+ 
+-/* Define to 1 if the system has the type `pthread_t'. */
++/* Define to 1 if the system has the type 'pthread_t'. */
+ #undef HAVE_PTHREAD_T
+ 
+-/* Define to 1 if you have the `raise' function. */
++/* Define to 1 if you have the 'raise' function. */
+ #undef HAVE_RAISE
+ 
+-/* Define to 1 if you have the `rawmemchr' function. */
++/* Define to 1 if you have the 'rawmemchr' function. */
+ #undef HAVE_RAWMEMCHR
+ 
+-/* Define to 1 if you have the `readdir' function. */
++/* Define to 1 if you have the 'readdir' function. */
+ #undef HAVE_READDIR
+ 
+-/* Define to 1 if you have the `readlink' function. */
++/* Define to 1 if you have the 'readlink' function. */
+ #undef HAVE_READLINK
+ 
+-/* Define to 1 if you have the `reallocarray' function. */
++/* Define to 1 if you have the 'reallocarray' function. */
+ #undef HAVE_REALLOCARRAY
+ 
+-/* Define to 1 if you have the `realpath' function. */
++/* Define to 1 if you have the 'realpath' function. */
+ #undef HAVE_REALPATH
+ 
+-/* Define to 1 if you have the `rewinddir' function. */
++/* Define to 1 if you have the 'rewinddir' function. */
+ #undef HAVE_REWINDDIR
+@@ -1527,3 +1527,3 @@
+ 
+-/* Define to 1 if the system has the type `sa_family_t'. */
++/* Define to 1 if the system has the type 'sa_family_t'. */
+ #undef HAVE_SA_FAMILY_T
+@@ -1533,6 +1533,6 @@
+ 
+-/* Define to 1 if you have the `sched_setparam' function. */
++/* Define to 1 if you have the 'sched_setparam' function. */
+ #undef HAVE_SCHED_SETPARAM
+ 
+-/* Define to 1 if you have the `sched_setscheduler' function. */
++/* Define to 1 if you have the 'sched_setscheduler' function. */
+ #undef HAVE_SCHED_SETSCHEDULER
+@@ -1545,3 +1545,3 @@
+ 
+-/* Define to 1 if you have the `secure_getenv' function. */
++/* Define to 1 if you have the 'secure_getenv' function. */
+ #undef HAVE_SECURE_GETENV
+@@ -1551,30 +1551,30 @@
+ 
+-/* Define to 1 if you have the `setdtablesize' function. */
++/* Define to 1 if you have the 'setdtablesize' function. */
+ #undef HAVE_SETDTABLESIZE
+ 
+-/* Define to 1 if you have the `setegid' function. */
++/* Define to 1 if you have the 'setegid' function. */
+ #undef HAVE_SETEGID
+ 
+-/* Define to 1 if you have the `setenv' function. */
++/* Define to 1 if you have the 'setenv' function. */
+ #undef HAVE_SETENV
+ 
+-/* Define to 1 if you have the `seteuid' function. */
++/* Define to 1 if you have the 'seteuid' function. */
+ #undef HAVE_SETEUID
+ 
+-/* Define to 1 if you have the `setrlimit' function. */
++/* Define to 1 if you have the 'setrlimit' function. */
+ #undef HAVE_SETRLIMIT
+ 
+-/* Define to 1 if you have the `shutdown' function. */
++/* Define to 1 if you have the 'shutdown' function. */
+ #undef HAVE_SHUTDOWN
+ 
+-/* Define to 1 if you have the `sigaction' function. */
++/* Define to 1 if you have the 'sigaction' function. */
+ #undef HAVE_SIGACTION
+ 
+-/* Define to 1 if you have the `sigaltstack' function. */
++/* Define to 1 if you have the 'sigaltstack' function. */
+ #undef HAVE_SIGALTSTACK
+ 
+-/* Define to 1 if the system has the type `siginfo_t'. */
++/* Define to 1 if the system has the type 'siginfo_t'. */
+ #undef HAVE_SIGINFO_T
+ 
+-/* Define to 1 if you have the `siginterrupt' function. */
++/* Define to 1 if you have the 'siginterrupt' function. */
+ #undef HAVE_SIGINTERRUPT
+@@ -1590,12 +1590,12 @@
+ 
+-/* Define to 1 if the system has the type `sigset_t'. */
++/* Define to 1 if the system has the type 'sigset_t'. */
+ #undef HAVE_SIGSET_T
+ 
+-/* Define to 1 if the system has the type `sig_atomic_t'. */
++/* Define to 1 if the system has the type 'sig_atomic_t'. */
+ #undef HAVE_SIG_ATOMIC_T
+ 
+-/* Define to 1 if you have the `sleep' function. */
++/* Define to 1 if you have the 'sleep' function. */
+ #undef HAVE_SLEEP
+ 
+-/* Define to 1 if you have the `snprintf' function. */
++/* Define to 1 if you have the 'snprintf' function. */
+ #undef HAVE_SNPRINTF
+@@ -1633,9 +1633,9 @@
+ 
+-/* Define to 1 if you have the `stpcpy' function. */
++/* Define to 1 if you have the 'stpcpy' function. */
+ #undef HAVE_STPCPY
+ 
+-/* Define to 1 if you have the `strchrnul' function. */
++/* Define to 1 if you have the 'strchrnul' function. */
+ #undef HAVE_STRCHRNUL
+ 
+-/* Define to 1 if you have the `strerror_r' function. */
++/* Define to 1 if you have the 'strerror_r' function. */
+ #undef HAVE_STRERROR_R
+@@ -1648,45 +1648,45 @@
+ 
+-/* Define to 1 if you have the `strndup' function. */
++/* Define to 1 if you have the 'strndup' function. */
+ #undef HAVE_STRNDUP
+ 
+-/* Define to 1 if you have the `strnlen' function. */
++/* Define to 1 if you have the 'strnlen' function. */
+ #undef HAVE_STRNLEN
+ 
+-/* Define to 1 if you have the `strsignal' function. */
++/* Define to 1 if you have the 'strsignal' function. */
+ #undef HAVE_STRSIGNAL
+ 
+-/* Define to 1 if `decimal_point' is a member of `struct lconv'. */
++/* Define to 1 if 'decimal_point' is a member of 'struct lconv'. */
+ #undef HAVE_STRUCT_LCONV_DECIMAL_POINT
+ 
+-/* Define to 1 if `sa_sigaction' is a member of `struct sigaction'. */
++/* Define to 1 if 'sa_sigaction' is a member of 'struct sigaction'. */
+ #undef HAVE_STRUCT_SIGACTION_SA_SIGACTION
+ 
+-/* Define to 1 if the system has the type `struct sockaddr_storage'. */
++/* Define to 1 if the system has the type 'struct sockaddr_storage'. */
+ #undef HAVE_STRUCT_SOCKADDR_STORAGE
+ 
+-/* Define to 1 if `ss_family' is a member of `struct sockaddr_storage'. */
++/* Define to 1 if 'ss_family' is a member of 'struct sockaddr_storage'. */
+ #undef HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY
+ 
+-/* Define to 1 if `st_atimensec' is a member of `struct stat'. */
++/* Define to 1 if 'st_atimensec' is a member of 'struct stat'. */
+ #undef HAVE_STRUCT_STAT_ST_ATIMENSEC
+ 
+-/* Define to 1 if `st_atimespec.tv_nsec' is a member of `struct stat'. */
++/* Define to 1 if 'st_atimespec.tv_nsec' is a member of 'struct stat'. */
+ #undef HAVE_STRUCT_STAT_ST_ATIMESPEC_TV_NSEC
+ 
+-/* Define to 1 if `st_atim.st__tim.tv_nsec' is a member of `struct stat'. */
++/* Define to 1 if 'st_atim.st__tim.tv_nsec' is a member of 'struct stat'. */
+ #undef HAVE_STRUCT_STAT_ST_ATIM_ST__TIM_TV_NSEC
+ 
+-/* Define to 1 if `st_atim.tv_nsec' is a member of `struct stat'. */
++/* Define to 1 if 'st_atim.tv_nsec' is a member of 'struct stat'. */
+ #undef HAVE_STRUCT_STAT_ST_ATIM_TV_NSEC
+ 
+-/* Define to 1 if `st_birthtimensec' is a member of `struct stat'. */
++/* Define to 1 if 'st_birthtimensec' is a member of 'struct stat'. */
+ #undef HAVE_STRUCT_STAT_ST_BIRTHTIMENSEC
+ 
+-/* Define to 1 if `st_birthtimespec.tv_nsec' is a member of `struct stat'. */
++/* Define to 1 if 'st_birthtimespec.tv_nsec' is a member of 'struct stat'. */
+ #undef HAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC
+ 
+-/* Define to 1 if `st_birthtim.tv_nsec' is a member of `struct stat'. */
++/* Define to 1 if 'st_birthtim.tv_nsec' is a member of 'struct stat'. */
+ #undef HAVE_STRUCT_STAT_ST_BIRTHTIM_TV_NSEC
+ 
+-/* Define to 1 if you have the `symlink' function. */
++/* Define to 1 if you have the 'symlink' function. */
+ #undef HAVE_SYMLINK
+@@ -1738,3 +1738,3 @@
+ 
+-/* Define to 1 if you have the `thrd_create' function. */
++/* Define to 1 if you have the 'thrd_create' function. */
+ #undef HAVE_THRD_CREATE
+@@ -1744,6 +1744,6 @@
+ 
+-/* Define to 1 if you have the `towlower' function. */
++/* Define to 1 if you have the 'towlower' function. */
+ #undef HAVE_TOWLOWER
+ 
+-/* Define to 1 if you have the `tsearch' function. */
++/* Define to 1 if you have the 'tsearch' function. */
+ #undef HAVE_TSEARCH
+@@ -1753,3 +1753,3 @@
+ 
+-/* Define to 1 if you have the `unsetenv' function. */
++/* Define to 1 if you have the 'unsetenv' function. */
+ #undef HAVE_UNSETENV
+@@ -1759,3 +1759,3 @@
+ 
+-/* Define to 1 if you have the `uselocale' function. */
++/* Define to 1 if you have the 'uselocale' function. */
+ #undef HAVE_USELOCALE
+@@ -1765,9 +1765,9 @@
+ 
+-/* Define to 1 if you have the `vasnprintf' function. */
++/* Define to 1 if you have the 'vasnprintf' function. */
+ #undef HAVE_VASNPRINTF
+ 
+-/* Define to 1 if you have the `vasprintf' function. */
++/* Define to 1 if you have the 'vasprintf' function. */
+ #undef HAVE_VASPRINTF
+ 
+-/* Define to 1 if you have the `vfork' function. */
++/* Define to 1 if you have the 'vfork' function. */
+ #undef HAVE_VFORK
+@@ -1778,3 +1778,3 @@
+ 
+-/* Define to 1 if you have the `waitid' function. */
++/* Define to 1 if you have the 'waitid' function. */
+ #undef HAVE_WAITID
+@@ -1787,12 +1787,12 @@
+ 
+-/* Define to 1 if you have the `wcrtomb' function. */
++/* Define to 1 if you have the 'wcrtomb' function. */
+ #undef HAVE_WCRTOMB
+ 
+-/* Define to 1 if you have the `wcslen' function. */
++/* Define to 1 if you have the 'wcslen' function. */
+ #undef HAVE_WCSLEN
+ 
+-/* Define to 1 if you have the `wcsnlen' function. */
++/* Define to 1 if you have the 'wcsnlen' function. */
+ #undef HAVE_WCSNLEN
+ 
+-/* Define to 1 if you have the `wctob' function. */
++/* Define to 1 if you have the 'wctob' function. */
+ #undef HAVE_WCTOB
+@@ -1802,3 +1802,3 @@
+ 
+-/* Define to 1 if you have the `wcwidth' function. */
++/* Define to 1 if you have the 'wcwidth' function. */
+ #undef HAVE_WCWIDTH
+@@ -1837,15 +1837,15 @@
+ 
+-/* Define to 1 if the system has the type `_Bool'. */
++/* Define to 1 if the system has the type '_Bool'. */
+ #undef HAVE__BOOL
+ 
+-/* Define to 1 if you have the `_chsize' function. */
++/* Define to 1 if you have the '_chsize' function. */
+ #undef HAVE__CHSIZE
+ 
+-/* Define to 1 if you have the `_fseeki64' function. */
++/* Define to 1 if you have the '_fseeki64' function. */
+ #undef HAVE__FSEEKI64
+ 
+-/* Define to 1 if you have the `_ftelli64' function. */
++/* Define to 1 if you have the '_ftelli64' function. */
+ #undef HAVE__FTELLI64
+ 
+-/* Define to 1 if you have the `_set_invalid_parameter_handler' function. */
++/* Define to 1 if you have the '_set_invalid_parameter_handler' function. */
+ #undef HAVE__SET_INVALID_PARAMETER_HANDLER
+@@ -1862,9 +1862,9 @@
+ 
+-/* Define to 1 if you have the `__fpurge' function. */
++/* Define to 1 if you have the '__fpurge' function. */
+ #undef HAVE___FPURGE
+ 
+-/* Define to 1 if you have the `__freadahead' function. */
++/* Define to 1 if you have the '__freadahead' function. */
+ #undef HAVE___FREADAHEAD
+ 
+-/* Define to 1 if you have the `__freading' function. */
++/* Define to 1 if you have the '__freading' function. */
+ #undef HAVE___FREADING
+@@ -1874,6 +1874,6 @@
+ 
+-/* Define to 1 if you have the `__secure_getenv' function. */
++/* Define to 1 if you have the '__secure_getenv' function. */
+ #undef HAVE___SECURE_GETENV
+ 
+-/* Define to 1 if you have the `__xpg_strerror_r' function. */
++/* Define to 1 if you have the '__xpg_strerror_r' function. */
+ #undef HAVE___XPG_STRERROR_R
+@@ -2168,6 +2168,6 @@
+ 
+-/* Define to 1 if the `S_IS*' macros in <sys/stat.h> do not work properly. */
++/* Define to 1 if the 'S_IS*' macros in <sys/stat.h> do not work properly. */
+ #undef STAT_MACROS_BROKEN
+ 
+-/* Define to 1 if all of the C90 standard headers exist (not just the ones
++/* Define to 1 if all of the C89 standard headers exist (not just the ones
+    required in a freestanding environment). This macro is provided for
+@@ -2204,3 +2204,3 @@
+ 
+-/* Enable extensions on AIX 3, Interix.  */
++/* Enable extensions on AIX, Interix, z/OS.  */
+ #ifndef _ALL_SOURCE
+@@ -2265,2 +2265,6 @@
+ #endif
++/* Enable extensions specified by C23 Annex F.  */
++#ifndef __STDC_WANT_IEC_60559_EXT__
++# undef __STDC_WANT_IEC_60559_EXT__
++#endif
+ /* Enable extensions specified by ISO/IEC TS 18661-4:2015.  */
+@@ -2269,3 +2273,3 @@
+ #endif
+-/* Enable extensions specified by ISO/IEC TS 18661-3:2015.  */
++/* Enable extensions specified by C23 Annex H and ISO/IEC TS 18661-3:2015.  */
+ #ifndef __STDC_WANT_IEC_60559_TYPES_EXT__
+@@ -2354,3 +2358,3 @@
+ 
+-/* Define for large files, on AIX-style hosts. */
++/* Define to 1 on platforms where this makes off_t a 64-bit type. */
+ #undef _LARGE_FILES
+@@ -2402,2 +2406,5 @@
+ 
++/* Number of bits in time_t, on hosts where this is settable. */
++#undef _TIME_BITS
++
+ /* For standard stat data types on VMS. */
+@@ -2409,2 +2416,5 @@
+ 
++/* Define to 1 on platforms where this makes time_t a 64-bit type. */
++#undef __MINGW_USE_VC2005_COMPAT
++
+ /* Define to 1 if the system <stdint.h> predates C++11. */
+@@ -2479,2 +2489,8 @@
+ 
++#ifdef __has_c_attribute
++# define _GL_HAS_C_ATTRIBUTE(attr) __has_c_attribute (__##attr##__)
++#else
++# define _GL_HAS_C_ATTRIBUTE(attr) 0
++#endif
++
+ 
+@@ -2517,3 +2533,3 @@
+ 
+-#if 201710L < __STDC_VERSION__
++#if _GL_HAS_C_ATTRIBUTE (deprecated)
+ # define _GL_ATTRIBUTE_DEPRECATED [[__deprecated__]]
+@@ -2543,3 +2559,3 @@
+ /* FALLTHROUGH is special, because it always expands to something.  */
+-#if 201710L < __STDC_VERSION__
++#if _GL_HAS_C_ATTRIBUTE (fallthrough)
+ # define _GL_ATTRIBUTE_FALLTHROUGH [[__fallthrough__]]
+@@ -2570,11 +2586,8 @@
+ 
+-#if 201710L < __STDC_VERSION__
++#if _GL_HAS_C_ATTRIBUTE (maybe_unused)
+ # define _GL_ATTRIBUTE_MAYBE_UNUSED [[__maybe_unused__]]
+-#elif _GL_HAS_ATTRIBUTE (unused)
+-# define _GL_ATTRIBUTE_MAYBE_UNUSED __attribute__ ((__unused__))
+ #else
+-# define _GL_ATTRIBUTE_MAYBE_UNUSED
++# define _GL_ATTRIBUTE_MAYBE_UNUSED _GL_ATTRIBUTE_UNUSED
+ #endif
+ /* Earlier spellings of this macro.  */
+-#define _GL_UNUSED _GL_ATTRIBUTE_MAYBE_UNUSED
+ #define _UNUSED_PARAMETER_ _GL_ATTRIBUTE_MAYBE_UNUSED
+@@ -2587,3 +2600,3 @@
+ 
+-#if 201710L < __STDC_VERSION__
++#if _GL_HAS_C_ATTRIBUTE (nodiscard)
+ # define _GL_ATTRIBUTE_NODISCARD [[__nodiscard__]]
+@@ -2645,2 +2658,10 @@
+ 
++#if _GL_HAS_ATTRIBUTE (unused)
++# define _GL_ATTRIBUTE_UNUSED __attribute__ ((__unused__))
++#else
++# define _GL_ATTRIBUTE_UNUSED
++#endif
++/* Earlier spellings of this macro.  */
++#define _GL_UNUSED _GL_ATTRIBUTE_UNUSED
++
+ 
+@@ -2648,3 +2669,3 @@
+ #if !defined __cplusplus || _GL_GNUC_PREREQ (4, 5)
+-# define _GL_UNUSED_LABEL _GL_ATTRIBUTE_MAYBE_UNUSED
++# define _GL_UNUSED_LABEL _GL_ATTRIBUTE_UNUSED
+ #else
+@@ -2761,3 +2782,3 @@
+ 
+-/* Define to `int' if <sys/types.h> doesn't define. */
++/* Define as 'int' if <sys/types.h> doesn't define. */
+ #undef gid_t
+@@ -2767,3 +2788,3 @@
+ 
+-/* Define to `__inline__' or `__inline' if that's what the C compiler
++/* Define to '__inline__' or '__inline' if that's what the C compiler
+    calls it, or to nothing if 'inline' is not supported under any name.  */
+@@ -2805,3 +2826,3 @@
+ 
+-/* Define to `int' if <sys/types.h> does not define. */
++/* Define to 'int' if <sys/types.h> does not define. */
+ #undef mode_t
+@@ -2811,3 +2832,3 @@
+ 
+-/* Define to `long int' if <sys/types.h> does not define. */
++/* Define to 'long int' if <sys/types.h> does not define. */
+ #undef off_t
+@@ -2885,3 +2906,3 @@
+ 
+-/* Define to `unsigned int' if <sys/types.h> does not define. */
++/* Define as 'unsigned int' if <stddef.h> doesn't define. */
+ #undef size_t
+@@ -2898,3 +2919,3 @@
+ 
+-/* Define to `int' if <sys/types.h> doesn't define. */
++/* Define as 'int' if <sys/types.h> doesn't define. */
+ #undef uid_t
+diff -urap1 a/lib/fflush.c b/lib/fflush.c
+--- a/lib/fflush.c	2021-04-22 22:28:47.000000000 +0200
++++ b/lib/fflush.c	2026-01-09 17:48:16.000000000 +0100
+@@ -30,4 +30,2 @@
+ 
+-#include "unused-parameter.h"
+-
+ #undef fflush
+@@ -98,4 +96,4 @@ restore_seek_optimization (FILE *fp, int
+ static void
+-update_fpos_cache (FILE *fp _GL_UNUSED_PARAMETER,
+-                   off_t pos _GL_UNUSED_PARAMETER)
++update_fpos_cache (_GL_ATTRIBUTE_MAYBE_UNUSED FILE *fp,
++                   _GL_ATTRIBUTE_MAYBE_UNUSED off_t pos)
+ {
+diff -urap1 a/lib/gl_anylinked_list2.h b/lib/gl_anylinked_list2.h
+--- a/lib/gl_anylinked_list2.h	2021-04-22 22:28:47.000000000 +0200
++++ b/lib/gl_anylinked_list2.h	2026-01-09 17:48:16.000000000 +0100
+@@ -172,3 +172,3 @@ gl_linked_size (gl_list_t list)
+ static const void * _GL_ATTRIBUTE_PURE
+-gl_linked_node_value (gl_list_t list _GL_ATTRIBUTE_MAYBE_UNUSED,
++gl_linked_node_value (_GL_ATTRIBUTE_MAYBE_UNUSED gl_list_t list,
+                       gl_list_node_t node)
+@@ -179,3 +179,3 @@ gl_linked_node_value (gl_list_t list _GL
+ static int
+-gl_linked_node_nx_set_value (gl_list_t list _GL_ATTRIBUTE_MAYBE_UNUSED,
++gl_linked_node_nx_set_value (_GL_ATTRIBUTE_MAYBE_UNUSED gl_list_t list,
+                              gl_list_node_t node,
+@@ -1043,3 +1043,3 @@ gl_linked_iterator_next (gl_list_iterato
+ static void
+-gl_linked_iterator_free (gl_list_iterator_t *iterator _GL_ATTRIBUTE_MAYBE_UNUSED)
++gl_linked_iterator_free (_GL_ATTRIBUTE_MAYBE_UNUSED gl_list_iterator_t *iterator)
+ {
+diff -urap1 a/lib/gl_anytree_oset.h b/lib/gl_anytree_oset.h
+--- a/lib/gl_anytree_oset.h	2021-04-22 22:28:47.000000000 +0200
++++ b/lib/gl_anytree_oset.h	2026-01-09 17:48:16.000000000 +0100
+@@ -440,3 +440,3 @@ gl_tree_iterator_next (gl_oset_iterator_
+ static void
+-gl_tree_iterator_free (gl_oset_iterator_t *iterator _GL_ATTRIBUTE_MAYBE_UNUSED)
++gl_tree_iterator_free (_GL_ATTRIBUTE_MAYBE_UNUSED gl_oset_iterator_t *iterator)
+ {
+diff -urap1 a/lib/gl_list.h b/lib/gl_list.h
+--- a/lib/gl_list.h	2021-04-22 22:28:47.000000000 +0200
++++ b/lib/gl_list.h	2026-01-09 17:48:16.000000000 +0100
+@@ -199,5 +199,5 @@ extern void gl_list_node_set_value (gl_l
+ /* Likewise.  Returns 0 upon success, -1 upon out-of-memory.  */
++_GL_ATTRIBUTE_NODISCARD
+ extern int gl_list_node_nx_set_value (gl_list_t list, gl_list_node_t node,
+-                                      const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++                                      const void *elt);
+ 
+@@ -247,5 +247,5 @@ extern gl_list_node_t gl_list_set_at (gl
+ /* Likewise.  Returns NULL upon out-of-memory.  */
++_GL_ATTRIBUTE_NODISCARD
+ extern gl_list_node_t gl_list_nx_set_at (gl_list_t list, size_t position,
+-                                         const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++                                         const void *elt);
+ 
+@@ -257,4 +257,4 @@ extern gl_list_node_t gl_list_set_first
+ /* Likewise.  Returns NULL upon out-of-memory.  */
+-extern gl_list_node_t gl_list_nx_set_first (gl_list_t list, const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++_GL_ATTRIBUTE_NODISCARD
++extern gl_list_node_t gl_list_nx_set_first (gl_list_t list, const void *elt);
+ 
+@@ -266,4 +266,4 @@ extern gl_list_node_t gl_list_set_last (
+ /* Likewise.  Returns NULL upon out-of-memory.  */
+-extern gl_list_node_t gl_list_nx_set_last (gl_list_t list, const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++_GL_ATTRIBUTE_NODISCARD
++extern gl_list_node_t gl_list_nx_set_last (gl_list_t list, const void *elt);
+ 
+@@ -309,4 +309,4 @@ extern gl_list_node_t gl_list_add_first
+ /* Likewise.  Returns NULL upon out-of-memory.  */
+-extern gl_list_node_t gl_list_nx_add_first (gl_list_t list, const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++_GL_ATTRIBUTE_NODISCARD
++extern gl_list_node_t gl_list_nx_add_first (gl_list_t list, const void *elt);
+ 
+@@ -317,4 +317,4 @@ extern gl_list_node_t gl_list_add_last (
+ /* Likewise.  Returns NULL upon out-of-memory.  */
+-extern gl_list_node_t gl_list_nx_add_last (gl_list_t list, const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++_GL_ATTRIBUTE_NODISCARD
++extern gl_list_node_t gl_list_nx_add_last (gl_list_t list, const void *elt);
+ 
+@@ -326,6 +326,6 @@ extern gl_list_node_t gl_list_add_before
+ /* Likewise.  Returns NULL upon out-of-memory.  */
++_GL_ATTRIBUTE_NODISCARD
+ extern gl_list_node_t gl_list_nx_add_before (gl_list_t list,
+                                              gl_list_node_t node,
+-                                             const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++                                             const void *elt);
+ 
+@@ -337,5 +337,5 @@ extern gl_list_node_t gl_list_add_after
+ /* Likewise.  Returns NULL upon out-of-memory.  */
++_GL_ATTRIBUTE_NODISCARD
+ extern gl_list_node_t gl_list_nx_add_after (gl_list_t list, gl_list_node_t node,
+-                                            const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++                                            const void *elt);
+ 
+@@ -347,5 +347,5 @@ extern gl_list_node_t gl_list_add_at (gl
+ /* Likewise.  Returns NULL upon out-of-memory.  */
++_GL_ATTRIBUTE_NODISCARD
+ extern gl_list_node_t gl_list_nx_add_at (gl_list_t list, size_t position,
+-                                         const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++                                         const void *elt);
+ 
+@@ -490,6 +490,6 @@ extern gl_list_node_t gl_sortedlist_add
+ /* Likewise.  Returns NULL upon out-of-memory.  */
++_GL_ATTRIBUTE_NODISCARD
+ extern gl_list_node_t gl_sortedlist_nx_add (gl_list_t list,
+                                             gl_listelement_compar_fn compar,
+-                                            const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++                                            const void *elt);
+ 
+@@ -632,3 +632,3 @@ gl_list_node_value (gl_list_t list, gl_l
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD int
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE int
+ gl_list_node_nx_set_value (gl_list_t list, gl_list_node_t node,
+@@ -687,3 +687,3 @@ gl_list_get_last (gl_list_t list)
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD gl_list_node_t
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE gl_list_node_t
+ gl_list_nx_set_at (gl_list_t list, size_t position, const void *elt)
+@@ -694,3 +694,3 @@ gl_list_nx_set_at (gl_list_t list, size_
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD gl_list_node_t
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE gl_list_node_t
+ gl_list_nx_set_first (gl_list_t list, const void *elt)
+@@ -700,3 +700,3 @@ gl_list_nx_set_first (gl_list_t list, co
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD gl_list_node_t
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE gl_list_node_t
+ gl_list_nx_set_last (gl_list_t list, const void *elt)
+@@ -754,3 +754,3 @@ gl_list_indexof_from_to (gl_list_t list,
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD gl_list_node_t
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE gl_list_node_t
+ gl_list_nx_add_first (gl_list_t list, const void *elt)
+@@ -761,3 +761,3 @@ gl_list_nx_add_first (gl_list_t list, co
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD gl_list_node_t
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE gl_list_node_t
+ gl_list_nx_add_last (gl_list_t list, const void *elt)
+@@ -768,3 +768,3 @@ gl_list_nx_add_last (gl_list_t list, con
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD gl_list_node_t
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE gl_list_node_t
+ gl_list_nx_add_before (gl_list_t list, gl_list_node_t node, const void *elt)
+@@ -775,3 +775,3 @@ gl_list_nx_add_before (gl_list_t list, g
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD gl_list_node_t
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE gl_list_node_t
+ gl_list_nx_add_after (gl_list_t list, gl_list_node_t node, const void *elt)
+@@ -782,3 +782,3 @@ gl_list_nx_add_after (gl_list_t list, gl
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD gl_list_node_t
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE gl_list_node_t
+ gl_list_nx_add_at (gl_list_t list, size_t position, const void *elt)
+@@ -893,3 +893,3 @@ gl_sortedlist_indexof_from_to (gl_list_t
+ 
+-GL_LIST_INLINE _GL_ATTRIBUTE_NODISCARD gl_list_node_t
++_GL_ATTRIBUTE_NODISCARD GL_LIST_INLINE gl_list_node_t
+ gl_sortedlist_nx_add (gl_list_t list, gl_listelement_compar_fn compar, const void *elt)
+diff -urap1 a/lib/gl_oset.h b/lib/gl_oset.h
+--- a/lib/gl_oset.h	2021-04-22 22:28:47.000000000 +0200
++++ b/lib/gl_oset.h	2026-01-09 17:48:16.000000000 +0100
+@@ -136,5 +136,6 @@ extern bool gl_oset_search_atleast (gl_o
+ extern bool gl_oset_add (gl_oset_t set, const void *elt);
++
+ /* Likewise.  Returns -1 upon out-of-memory.  */
+-extern int gl_oset_nx_add (gl_oset_t set, const void *elt)
+-  _GL_ATTRIBUTE_NODISCARD;
++_GL_ATTRIBUTE_NODISCARD
++extern int gl_oset_nx_add (gl_oset_t set, const void *elt);
+ 
+@@ -274,3 +275,3 @@ gl_oset_search_atleast (gl_oset_t set,
+ 
+-GL_OSET_INLINE _GL_ATTRIBUTE_NODISCARD int
++_GL_ATTRIBUTE_NODISCARD GL_OSET_INLINE int
+ gl_oset_nx_add (gl_oset_t set, const void *elt)
+diff -urap1 a/lib/gnulib.mk b/lib/gnulib.mk
+--- a/lib/gnulib.mk	2021-05-19 16:37:09.000000000 +0200
++++ b/lib/gnulib.mk	2026-01-09 17:55:23.000000000 +0100
+@@ -2537,14 +2537,2 @@ EXTRA_DIST += c++defs.h
+ 
+-## begin gnulib module snippet/unused-parameter
+-
+-# Because this Makefile snippet defines a variable used by other
+-# gnulib Makefile snippets, it must be present in all makefiles that
+-# need it. This is ensured by the applicability 'all' defined above.
+-
+-UNUSED_PARAMETER_H=$(srcdir)/unused-parameter.h
+-
+-EXTRA_DIST += unused-parameter.h
+-
+-## end   gnulib module snippet/unused-parameter
+-
+ ## begin gnulib module snippet/warn-on-use
+diff -urap1 a/lib/hash.h b/lib/hash.h
+--- a/lib/hash.h	2021-04-22 22:28:47.000000000 +0200
++++ b/lib/hash.h	2026-01-09 17:48:16.000000000 +0100
+@@ -174,2 +174,3 @@ typedef void (*Hash_data_freer) (void *e
+    values.  */
++_GL_ATTRIBUTE_NODISCARD
+ extern Hash_table *hash_initialize (size_t candidate,
+@@ -178,4 +179,3 @@ extern Hash_table *hash_initialize (size
+                                     Hash_comparator comparator,
+-                                    Hash_data_freer data_freer)
+-       _GL_ATTRIBUTE_NODISCARD;
++                                    Hash_data_freer data_freer);
+ 
+@@ -183,2 +183,3 @@ extern Hash_table *hash_initialize (size
+ /* This function is defined by module 'xhash'.  */
++_GL_ATTRIBUTE_NODISCARD
+ extern Hash_table *hash_xinitialize (size_t candidate,
+@@ -187,4 +188,3 @@ extern Hash_table *hash_xinitialize (siz
+                                      Hash_comparator comparator,
+-                                     Hash_data_freer data_freer)
+-       _GL_ATTRIBUTE_NODISCARD;
++                                     Hash_data_freer data_freer);
+ 
+@@ -212,4 +212,4 @@ extern void hash_free (Hash_table *table
+    exact number of buckets desired.  Return true iff the rehash succeeded.  */
+-extern bool hash_rehash (Hash_table *table, size_t candidate)
+-       _GL_ATTRIBUTE_NODISCARD;
++_GL_ATTRIBUTE_NODISCARD
++extern bool hash_rehash (Hash_table *table, size_t candidate);
+ 
+@@ -220,4 +220,4 @@ extern bool hash_rehash (Hash_table *tab
+    NULL.  */
+-extern void *hash_insert (Hash_table *table, const void *entry)
+-       _GL_ATTRIBUTE_NODISCARD;
++_GL_ATTRIBUTE_NODISCARD
++extern void *hash_insert (Hash_table *table, const void *entry);
+ 
+@@ -253,4 +253,4 @@ extern void *hash_remove (Hash_table *ta
+    FIXME: Remove in 2022.  */
+-extern void *hash_delete (Hash_table *table, const void *entry)
+-       _GL_ATTRIBUTE_DEPRECATED;
++_GL_ATTRIBUTE_DEPRECATED
++extern void *hash_delete (Hash_table *table, const void *entry);
+ 
+diff -urap1 a/lib/iconv_open-aix.h b/lib/iconv_open-aix.h
+--- a/lib/iconv_open-aix.h	2021-04-01 22:32:24.000000000 +0200
++++ b/lib/iconv_open-aix.h	2026-01-09 17:56:12.000000000 +0100
+@@ -1,2 +1,2 @@
+-/* ANSI-C code produced by gperf version 3.1 */
++/* ANSI-C code produced by gperf version 3.3 */
+ /* Command-line: gperf -m 10 ./iconv_open-aix.gperf  */
+@@ -155,2 +155,6 @@ static const struct stringpool_t stringp
+ 
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
++#endif
+ static const struct mapping mappings[] =
+@@ -228,2 +232,5 @@ static const struct mapping mappings[] =
+   };
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic pop
++#endif
+ 
+@@ -248,3 +255,3 @@ mapping_lookup (register const char *str
+     }
+-  return 0;
++  return (struct mapping *) 0;
+ }
+diff -urap1 a/lib/iconv_open-hpux.h b/lib/iconv_open-hpux.h
+--- a/lib/iconv_open-hpux.h	2021-04-01 22:32:24.000000000 +0200
++++ b/lib/iconv_open-hpux.h	2026-01-09 17:56:12.000000000 +0100
+@@ -1,2 +1,2 @@
+-/* ANSI-C code produced by gperf version 3.1 */
++/* ANSI-C code produced by gperf version 3.3 */
+ /* Command-line: gperf -m 10 ./iconv_open-hpux.gperf  */
+@@ -179,2 +179,6 @@ static const struct stringpool_t stringp
+ 
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
++#endif
+ static const struct mapping mappings[] =
+@@ -271,2 +275,5 @@ static const struct mapping mappings[] =
+   };
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic pop
++#endif
+ 
+@@ -291,3 +298,3 @@ mapping_lookup (register const char *str
+     }
+-  return 0;
++  return (struct mapping *) 0;
+ }
+diff -urap1 a/lib/iconv_open-irix.h b/lib/iconv_open-irix.h
+--- a/lib/iconv_open-irix.h	2021-04-01 22:32:24.000000000 +0200
++++ b/lib/iconv_open-irix.h	2026-01-09 17:56:12.000000000 +0100
+@@ -1,2 +1,2 @@
+-/* ANSI-C code produced by gperf version 3.1 */
++/* ANSI-C code produced by gperf version 3.3 */
+ /* Command-line: gperf -m 10 ./iconv_open-irix.gperf  */
+@@ -129,2 +129,6 @@ static const struct stringpool_t stringp
+ 
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
++#endif
+ static const struct mapping mappings[] =
+@@ -171,2 +175,5 @@ static const struct mapping mappings[] =
+   };
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic pop
++#endif
+ 
+@@ -191,3 +198,3 @@ mapping_lookup (register const char *str
+     }
+-  return 0;
++  return (struct mapping *) 0;
+ }
+diff -urap1 a/lib/iconv_open-osf.h b/lib/iconv_open-osf.h
+--- a/lib/iconv_open-osf.h	2021-04-01 22:32:24.000000000 +0200
++++ b/lib/iconv_open-osf.h	2026-01-09 17:56:12.000000000 +0100
+@@ -1,2 +1,2 @@
+-/* ANSI-C code produced by gperf version 3.1 */
++/* ANSI-C code produced by gperf version 3.3 */
+ /* Command-line: gperf -m 10 ./iconv_open-osf.gperf  */
+@@ -167,2 +167,6 @@ static const struct stringpool_t stringp
+ 
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
++#endif
+ static const struct mapping mappings[] =
+@@ -250,2 +254,5 @@ static const struct mapping mappings[] =
+   };
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic pop
++#endif
+ 
+@@ -270,3 +277,3 @@ mapping_lookup (register const char *str
+     }
+-  return 0;
++  return (struct mapping *) 0;
+ }
+diff -urap1 a/lib/iconv_open-solaris.h b/lib/iconv_open-solaris.h
+--- a/lib/iconv_open-solaris.h	2021-04-01 22:32:24.000000000 +0200
++++ b/lib/iconv_open-solaris.h	2026-01-09 17:56:12.000000000 +0100
+@@ -1,2 +1,2 @@
+-/* ANSI-C code produced by gperf version 3.1 */
++/* ANSI-C code produced by gperf version 3.3 */
+ /* Command-line: gperf -m 10 ./iconv_open-solaris.gperf  */
+@@ -86,2 +86,7 @@ mapping_hash (register const char *str,
+         hval += asso_values[(unsigned char)str[9]];
++#if (defined __cplusplus && (__cplusplus >= 201703L || (__cplusplus >= 201103L && defined __clang__ && __clang_major__ + (__clang_minor__ >= 9) > 3))) || (defined __STDC_VERSION__ && __STDC_VERSION__ >= 202000L && ((defined __GNUC__ && __GNUC__ >= 10) || (defined __clang__ && __clang_major__ >= 9)))
++      [[fallthrough]];
++#elif (defined __GNUC__ && __GNUC__ >= 7) || (defined __clang__ && __clang_major__ >= 10)
++      __attribute__ ((__fallthrough__));
++#endif
+       /*FALLTHROUGH*/
+@@ -131,2 +136,6 @@ static const struct stringpool_t stringp
+ 
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
++#endif
+ static const struct mapping mappings[] =
+@@ -162,2 +171,5 @@ static const struct mapping mappings[] =
+   };
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic pop
++#endif
+ 
+@@ -182,3 +194,3 @@ mapping_lookup (register const char *str
+     }
+-  return 0;
++  return (struct mapping *) 0;
+ }
+diff -urap1 a/lib/iconv_open-zos.h b/lib/iconv_open-zos.h
+--- a/lib/iconv_open-zos.h	2021-04-01 22:32:24.000000000 +0200
++++ b/lib/iconv_open-zos.h	2026-01-09 17:56:12.000000000 +0100
+@@ -1,2 +1,2 @@
+-/* ANSI-C code produced by gperf version 3.1 */
++/* ANSI-C code produced by gperf version 3.3 */
+ /* Command-line: gperf -m 10 ./iconv_open-zos.gperf  */
+@@ -87,2 +87,7 @@ mapping_hash (register const char *str,
+         hval += asso_values[(unsigned char)str[3]+6];
++#if (defined __cplusplus && (__cplusplus >= 201703L || (__cplusplus >= 201103L && defined __clang__ && __clang_major__ + (__clang_minor__ >= 9) > 3))) || (defined __STDC_VERSION__ && __STDC_VERSION__ >= 202000L && ((defined __GNUC__ && __GNUC__ >= 10) || (defined __clang__ && __clang_major__ >= 9)))
++      [[fallthrough]];
++#elif (defined __GNUC__ && __GNUC__ >= 7) || (defined __clang__ && __clang_major__ >= 10)
++      __attribute__ ((__fallthrough__));
++#endif
+       /*FALLTHROUGH*/
+@@ -200,2 +205,6 @@ static const struct stringpool_t stringp
+ 
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
++#endif
+ static const struct mapping mappings[] =
+@@ -307,2 +316,5 @@ static const struct mapping mappings[] =
+   };
++#if (defined __GNUC__ && __GNUC__ + (__GNUC_MINOR__ >= 6) > 4) || (defined __clang__ && __clang_major__ >= 3)
++#pragma GCC diagnostic pop
++#endif
+ 
+@@ -327,3 +339,3 @@ mapping_lookup (register const char *str
+     }
+-  return 0;
++  return (struct mapping *) 0;
+ }
+diff -urap1 a/lib/Makefile.in b/lib/Makefile.in
+--- a/lib/Makefile.in	2021-05-28 20:48:49.000000000 +0200
++++ b/lib/Makefile.in	2026-01-09 17:55:47.000000000 +0100
+@@ -1,5 +1,5 @@
+-# Makefile.in generated by automake 1.16.3 from Makefile.am.
++# Makefile.in generated by automake 1.18.1 from Makefile.am.
+ # @configure_input@
+ 
+-# Copyright (C) 1994-2020 Free Software Foundation, Inc.
++# Copyright (C) 1994-2025 Free Software Foundation, Inc.
+ 
+@@ -177,2 +177,4 @@ am__make_dryrun = (target_option=n; $(am
+ am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
++am__rm_f = rm -f $(am__rm_f_notfound)
++am__rm_rf = rm -rf $(am__rm_f_notfound)
+ pkgdatadir = $(datadir)/@PACKAGE@
+@@ -373,2 +375,3 @@ am__v_AR_1 =
+ libm4_a_AR = $(AR) $(ARFLAGS)
++libm4_a_RANLIB = $(RANLIB)
+ am__DEPENDENCIES_1 =
+@@ -658,4 +661,2 @@ am__define_uniq_tagged_files = \
+   done | $(am__uniquify_input)`
+-ETAGS = etags
+-CTAGS = ctags
+ am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/config.hin \
+@@ -689,2 +690,4 @@ CPP = @CPP@
+ CPPFLAGS = @CPPFLAGS@
++CSCOPE = @CSCOPE@
++CTAGS = @CTAGS@
+ CXX = @CXX@
+@@ -707,2 +710,3 @@ EOVERFLOW_VALUE = @EOVERFLOW_VALUE@
+ ERRNO_H = @ERRNO_H@
++ETAGS = @ETAGS@
+ EXEEXT = @EXEEXT@
+@@ -2201,4 +2205,6 @@ am__leading_dot = @am__leading_dot@
+ am__quote = @am__quote@
++am__rm_f_notfound = @am__rm_f_notfound@
+ am__tar = @am__tar@
+ am__untar = @am__untar@
++am__xargs_n = @am__xargs_n@
+ bindir = @bindir@
+@@ -2322,15 +2328,15 @@ EXTRA_DIST = access.c alignof.h alloca.i
+ 	sigprocmask.c sigsegv.in.h stackvma.h _Noreturn.h \
+-	arg-nonnull.h c++defs.h unused-parameter.h warn-on-use.h \
+-	snprintf.c spawn.in.h os2-spawn.c os2-spawn.h stat-w32.c \
+-	stat-w32.h stat.c stat-time.h stdalign.in.h stdarg.in.h \
+-	stdbool.in.h stddef.in.h stdint.in.h stdio.in.h stdlib.in.h \
+-	stdlib--.h stdlib-safer.h stpcpy.c strchrnul.c \
+-	strchrnul.valgrind strdup.c streq.h strerror.c \
+-	strerror-override.c strerror-override.h string.in.h strndup.c \
+-	strnlen.c siglist.h strsignal.c strstr.c str-two-way.h \
+-	strstr.c strtod.c sys_random.in.h sys_stat.in.h sys_types.in.h \
+-	sys_wait.in.h tempname.h thread-optim.h time.in.h trim.h \
+-	unistd.in.h unistd--.h unistd-safer.h unistr.in.h \
+-	unitypes.in.h localcharset.h uniwidth.in.h uniwidth/cjk.h \
+-	unlocked-io.h $(top_srcdir)/build-aux/update-copyright \
++	arg-nonnull.h c++defs.h warn-on-use.h snprintf.c spawn.in.h \
++	os2-spawn.c os2-spawn.h stat-w32.c stat-w32.h stat.c \
++	stat-time.h stdalign.in.h stdarg.in.h stdbool.in.h stddef.in.h \
++	stdint.in.h stdio.in.h stdlib.in.h stdlib--.h stdlib-safer.h \
++	stpcpy.c strchrnul.c strchrnul.valgrind strdup.c streq.h \
++	strerror.c strerror-override.c strerror-override.h string.in.h \
++	strndup.c strnlen.c siglist.h strsignal.c strstr.c \
++	str-two-way.h strstr.c strtod.c sys_random.in.h sys_stat.in.h \
++	sys_types.in.h sys_wait.in.h tempname.h thread-optim.h \
++	time.in.h trim.h unistd.in.h unistd--.h unistd-safer.h \
++	unistr.in.h unitypes.in.h localcharset.h uniwidth.in.h \
++	uniwidth/cjk.h unlocked-io.h \
++	$(top_srcdir)/build-aux/update-copyright \
+ 	$(top_srcdir)/build-aux/useless-if-before-free asnprintf.c \
+@@ -2473,7 +2479,2 @@ CXXDEFS_H = $(srcdir)/c++defs.h
+ # need it. This is ensured by the applicability 'all' defined above.
+-UNUSED_PARAMETER_H = $(srcdir)/unused-parameter.h
+-
+-# Because this Makefile snippet defines a variable used by other
+-# gnulib Makefile snippets, it must be present in all makefiles that
+-# need it. This is ensured by the applicability 'all' defined above.
+ WARN_ON_USE_H = $(srcdir)/warn-on-use.h
+@@ -2520,8 +2521,8 @@ config.h: stamp-h1
+ stamp-h1: $(srcdir)/config.hin $(top_builddir)/config.status
+-	@rm -f stamp-h1
+-	cd $(top_builddir) && $(SHELL) ./config.status lib/config.h
++	$(AM_V_at)rm -f stamp-h1
++	$(AM_V_GEN)cd $(top_builddir) && $(SHELL) ./config.status lib/config.h
+ $(srcdir)/config.hin:  $(am__configure_deps) 
+-	($(am__cd) $(top_srcdir) && $(AUTOHEADER))
+-	rm -f stamp-h1
+-	touch $@
++	$(AM_V_GEN)($(am__cd) $(top_srcdir) && $(AUTOHEADER))
++	$(AM_V_at)rm -f stamp-h1
++	$(AM_V_at)touch $@
+ 
+@@ -2531,9 +2532,9 @@ distclean-hdr:
+ clean-noinstLIBRARIES:
+-	-test -z "$(noinst_LIBRARIES)" || rm -f $(noinst_LIBRARIES)
++	-$(am__rm_f) $(noinst_LIBRARIES)
+ malloc/$(am__dirstamp):
+ 	@$(MKDIR_P) malloc
+-	@: > malloc/$(am__dirstamp)
++	@: >>malloc/$(am__dirstamp)
+ malloc/$(DEPDIR)/$(am__dirstamp):
+ 	@$(MKDIR_P) malloc/$(DEPDIR)
+-	@: > malloc/$(DEPDIR)/$(am__dirstamp)
++	@: >>malloc/$(DEPDIR)/$(am__dirstamp)
+ malloc/dynarray_at_failure.$(OBJEXT): malloc/$(am__dirstamp) \
+@@ -2550,6 +2551,6 @@ glthread/$(am__dirstamp):
+ 	@$(MKDIR_P) glthread
+-	@: > glthread/$(am__dirstamp)
++	@: >>glthread/$(am__dirstamp)
+ glthread/$(DEPDIR)/$(am__dirstamp):
+ 	@$(MKDIR_P) glthread/$(DEPDIR)
+-	@: > glthread/$(DEPDIR)/$(am__dirstamp)
++	@: >>glthread/$(DEPDIR)/$(am__dirstamp)
+ glthread/lock.$(OBJEXT): glthread/$(am__dirstamp) \
+@@ -2570,6 +2571,6 @@ unistr/$(am__dirstamp):
+ 	@$(MKDIR_P) unistr
+-	@: > unistr/$(am__dirstamp)
++	@: >>unistr/$(am__dirstamp)
+ unistr/$(DEPDIR)/$(am__dirstamp):
+ 	@$(MKDIR_P) unistr/$(DEPDIR)
+-	@: > unistr/$(DEPDIR)/$(am__dirstamp)
++	@: >>unistr/$(DEPDIR)/$(am__dirstamp)
+ unistr/u8-mbtoucr.$(OBJEXT): unistr/$(am__dirstamp) \
+@@ -2582,6 +2583,6 @@ uniwidth/$(am__dirstamp):
+ 	@$(MKDIR_P) uniwidth
+-	@: > uniwidth/$(am__dirstamp)
++	@: >>uniwidth/$(am__dirstamp)
+ uniwidth/$(DEPDIR)/$(am__dirstamp):
+ 	@$(MKDIR_P) uniwidth/$(DEPDIR)
+-	@: > uniwidth/$(DEPDIR)/$(am__dirstamp)
++	@: >>uniwidth/$(DEPDIR)/$(am__dirstamp)
+ uniwidth/width.$(OBJEXT): uniwidth/$(am__dirstamp) \
+@@ -2594,3 +2595,3 @@ libm4.a: $(libm4_a_OBJECTS) $(libm4_a_DE
+ 	$(AM_V_AR)$(libm4_a_AR) libm4.a $(libm4_a_OBJECTS) $(libm4_a_LIBADD)
+-	$(AM_V_at)$(RANLIB) libm4.a
++	$(AM_V_at)$(libm4_a_RANLIB) libm4.a
+ 
+@@ -2860,3 +2861,3 @@ $(am__depfiles_remade):
+ 	@$(MKDIR_P) $(@D)
+-	@echo '# dummy' >$@-t && $(am__mv) $@-t $@
++	@: >>$@
+ 
+@@ -2992,18 +2993,18 @@ install-strip:
+ mostlyclean-generic:
+-	-test -z "$(MOSTLYCLEANFILES)" || rm -f $(MOSTLYCLEANFILES)
++	-$(am__rm_f) $(MOSTLYCLEANFILES)
+ 
+ clean-generic:
+-	-test -z "$(CLEANFILES)" || rm -f $(CLEANFILES)
++	-$(am__rm_f) $(CLEANFILES)
+ 
+ distclean-generic:
+-	-test -z "$(CONFIG_CLEAN_FILES)" || rm -f $(CONFIG_CLEAN_FILES)
+-	-test . = "$(srcdir)" || test -z "$(CONFIG_CLEAN_VPATH_FILES)" || rm -f $(CONFIG_CLEAN_VPATH_FILES)
+-	-rm -f glthread/$(DEPDIR)/$(am__dirstamp)
+-	-rm -f glthread/$(am__dirstamp)
+-	-rm -f malloc/$(DEPDIR)/$(am__dirstamp)
+-	-rm -f malloc/$(am__dirstamp)
+-	-rm -f unistr/$(DEPDIR)/$(am__dirstamp)
+-	-rm -f unistr/$(am__dirstamp)
+-	-rm -f uniwidth/$(DEPDIR)/$(am__dirstamp)
+-	-rm -f uniwidth/$(am__dirstamp)
++	-$(am__rm_f) $(CONFIG_CLEAN_FILES)
++	-test . = "$(srcdir)" || $(am__rm_f) $(CONFIG_CLEAN_VPATH_FILES)
++	-$(am__rm_f) glthread/$(DEPDIR)/$(am__dirstamp)
++	-$(am__rm_f) glthread/$(am__dirstamp)
++	-$(am__rm_f) malloc/$(DEPDIR)/$(am__dirstamp)
++	-$(am__rm_f) malloc/$(am__dirstamp)
++	-$(am__rm_f) unistr/$(DEPDIR)/$(am__dirstamp)
++	-$(am__rm_f) unistr/$(am__dirstamp)
++	-$(am__rm_f) uniwidth/$(DEPDIR)/$(am__dirstamp)
++	-$(am__rm_f) uniwidth/$(am__dirstamp)
+ 
+@@ -3012,4 +3013,4 @@ maintainer-clean-generic:
+ 	@echo "it deletes files that may require special tools to rebuild."
+-	-test -z "$(BUILT_SOURCES)" || rm -f $(BUILT_SOURCES)
+-	-test -z "$(MAINTAINERCLEANFILES)" || rm -f $(MAINTAINERCLEANFILES)
++	-$(am__rm_f) $(BUILT_SOURCES)
++	-$(am__rm_f) $(MAINTAINERCLEANFILES)
+ clean: clean-am
+@@ -3019,3 +3020,3 @@ clean-am: clean-generic clean-noinstLIBR
+ distclean: distclean-am
+-		-rm -f ./$(DEPDIR)/access.Po
++	-rm -f ./$(DEPDIR)/access.Po
+ 	-rm -f ./$(DEPDIR)/asnprintf.Po
+@@ -3315,3 +3316,3 @@ installcheck-am:
+ maintainer-clean: maintainer-clean-am
+-		-rm -f ./$(DEPDIR)/access.Po
++	-rm -f ./$(DEPDIR)/access.Po
+ 	-rm -f ./$(DEPDIR)/asnprintf.Po
+@@ -5365 +5366,8 @@ mostlyclean-local: mostlyclean-generic
+ .NOEXPORT:
++
++# Tell GNU make to disable its built-in pattern rules.
++%:: %,v
++%:: RCS/%,v
++%:: RCS/%
++%:: s.%
++%:: SCCS/s.%
+diff -urap1 a/lib/unistr.in.h b/lib/unistr.in.h
+--- a/lib/unistr.in.h	2021-04-01 22:30:13.000000000 +0200
++++ b/lib/unistr.in.h	2026-01-09 17:55:11.000000000 +0100
+@@ -21,5 +21,2 @@
+ 
+-/* Get common macros for C.  */
+-#include "unused-parameter.h"
+-
+ /* Get bool.  */
+@@ -195,3 +192,3 @@ static inline int
+ u32_mbtouc_unsafe (ucs4_t *puc,
+-                   const uint32_t *s, size_t n _GL_UNUSED_PARAMETER)
++                   const uint32_t *s, _GL_ATTRIBUTE_MAYBE_UNUSED size_t n)
+ {
+@@ -261,3 +258,4 @@ extern int
+ static inline int
+-u32_mbtouc (ucs4_t *puc, const uint32_t *s, size_t n _GL_UNUSED_PARAMETER)
++u32_mbtouc (ucs4_t *puc, const uint32_t *s,
++            _GL_ATTRIBUTE_MAYBE_UNUSED size_t n)
+ {
+Only in a/lib: unused-parameter.h

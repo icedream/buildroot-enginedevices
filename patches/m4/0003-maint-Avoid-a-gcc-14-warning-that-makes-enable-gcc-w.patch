@@ -1,0 +1,31 @@
+From 48e0684620fca8d6314e6444e835a1529e1ec723 Mon Sep 17 00:00:00 2001
+From: Bruno Haible <bruno@clisp.org>
+Date: Tue, 20 Aug 2024 03:27:43 +0200
+Subject: [PATCH 3/3] maint: Avoid a gcc 14 warning that makes
+ --enable-gcc-warnings break.
+
+* src/output.c: Disable -Wnull-dereference warnings in this file.
+---
+ src/output.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/src/output.c b/src/output.c
+index d962bf36..ca23cfcd 100644
+--- a/src/output.c
++++ b/src/output.c
+@@ -27,6 +27,12 @@
+ #include "gl_avltree_oset.h"
+ #include "gl_xoset.h"
+ 
++/* Work around a bogus GCC warning
++   <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=116426>.  */
++#if __GNUC__ >= 6
++# pragma GCC diagnostic ignored "-Wnull-dereference"
++#endif
++
+ /* Size of initial in-memory buffer size for diversions.  Small diversions
+    would usually fit in.  */
+ #define INITIAL_BUFFER_SIZE 512
+-- 
+2.52.0
+
